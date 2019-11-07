@@ -17,9 +17,9 @@ const Html = props => {
             <link rel="shortcut icon" href="assets/img/favicon.ico" />
         </head>
             <body>
-                <div id="app">
+                <main id="app" className="scroll">
                     {props.children}
-                </div>
+                </main>
                 <script src="assets/js/bundle.js"></script>
             </body>
         </html>

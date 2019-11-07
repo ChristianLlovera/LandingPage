@@ -1,0 +1,33 @@
+@import "sass/animate";
+@import "sass/variables";
+
+.content {
+    height: 100%;
+
+    &>.body {
+        min-height: calc(100% - 600px);
+        display: flex;
+        background-color: $white;
+
+        &>.blue {
+            padding-top: 140px;
+            display: flex;
+            justify-content: center;
+            width: 50%;
+            background-color: $blue;
+            z-index: 1;
+        }
+
+        &>.white {
+            padding-top: 140px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            background-color: $white;
+        }
+
+    }
+
+}

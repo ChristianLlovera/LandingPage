@@ -1,12 +1,30 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import Header from './Header'
+import Skills from './Skills'
+import Social from './Social'
+import Info from './Info'
+import Footer from './Footer'
 
-if (process.env.WEBPACK) { require('./style.scss') }
+if (process.env.WEBPACK) { require('./_style.scss') }
+
 
 const Home = () => {
     return (
-        <div >
-            Home - <Link to="/about">About</Link>
+        <div className="content">
+            <Header />
+            <div className="body">
+                <div className="blue">
+                    <Skills />
+                    <Social />
+                </div>
+                <div className="white">
+                    <Info />
+                    <div className="email">
+                        christian.llovera@gmail.com
+                    </div>
+                </div>
+            </div>
+            <Footer />
         </div>
     )
 }

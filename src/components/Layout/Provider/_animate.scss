@@ -1,0 +1,57 @@
+@import "sass/variables";
+
+.progress {
+    animation: progressBar 3s ease-in-out;
+    animation-fill-mode: both;
+}
+
+@keyframes progressBar {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: var(--bar-width);
+    }
+}
+
+
+@-webkit-keyframes rotateLeft {
+    from {
+        @include rotateFrom(359deg);
+    }
+
+    to {
+        @include rotateTo(0deg);
+    }
+}
+
+@keyframes rotateLeft {
+    from {
+        @include rotateFrom(359deg);
+    }
+
+    to {
+        @include rotateTo(0deg);
+    }
+}
+
+@-webkit-keyframes rotateRight {
+    from {
+        @include rotateFrom(0deg);
+    }
+
+    to {
+        @include rotateTo(359deg);
+    }
+}
+
+@keyframes rotateRight {
+    from {
+        @include rotateFrom(0deg);
+    }
+
+    to {
+        @include rotateTo(359deg);
+    }
+}
