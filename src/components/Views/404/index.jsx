@@ -1,9 +1,11 @@
 import React from 'react'
+if (process.env.WEBPACK) { require('./_style.scss') }
 
 const NoFount = () => {
     return (
-        <div>
-            Error 404
+        <div className="error">
+            <div className="notFound">
+            </div>
         </div>
     )
 }
