@@ -15,6 +15,8 @@
             justify-content: center;
             width: 50%;
             background-color: $blue;
+            padding-left: 20px;
+            padding-right: 70px;
             z-index: 1;
         }
 
@@ -26,8 +28,178 @@
             align-items: center;
             width: 50%;
             background-color: $white;
+            padding-left: 70px;
+            padding-right: 20px;
         }
 
     }
 
+}
+
+
+@media screen and (max-width:640px) {
+    .content {
+        &>.header {
+            height: 150px;
+
+            &>.picture {
+                width: 150px;
+                height: 150px;
+                bottom: -76px;
+
+                &::after {
+                    @include circle(200px);
+                }
+
+                &::before {
+                    @include circle(250px);
+                }
+            }
+        }
+
+        &>.body {
+            flex-direction: column-reverse;
+
+
+            &>.blue {
+                width: 100%;
+                padding: 20px;
+                padding-top: 100px;
+            }
+
+            &>.white {
+                width: 100%;
+                padding: 20px;
+                padding-top: 170px;
+                padding-bottom: 50px;
+            }
+        }
+
+
+    }
+
+    .footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .social {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0px;
+        right: inherit;
+        top: -22px;
+        min-width: 300px;
+
+        &>.button {
+            margin: 0px;
+            width: 50px;
+            height: 50px;
+
+            &>span {
+                width: 20px;
+                height: 20px;
+            }
+
+            &::after {
+                content: "";
+                @include circle(62px);
+            }
+
+            &::before {
+                content: "";
+                @include circle(75px);
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:1024px) and (min-width:640px) {
+    .content {
+
+        &>.body {
+            flex-direction: column-reverse;
+
+            &>.blue {
+                width: 100%;
+                padding: 20px;
+                padding-top: 120px;
+            }
+
+            &>.white {
+                width: 100%;
+                padding: 20px;
+                padding-top: 220px;
+                padding-bottom: 50px;
+            }
+        }
+
+    }
+
+    .social {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0px;
+        right: inherit;
+        top: -35px;
+        min-width: 400px;
+
+        &>.button {
+            margin: 0px;
+            width: 70px;
+            height: 70px;
+
+            &>span {
+                width: 30px;
+                height: 30px;
+            }
+
+            &::after {
+                content: "";
+                @include circle(85px);
+            }
+
+            &::before {
+                content: "";
+                @include circle(100px);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:344px) {
+    .social {
+        top: -24px;
+        min-width: 260px;
+
+        &>.button {
+            width: 45px;
+            height: 45px;
+
+            &>span {
+                width: 25px;
+                height: 25px;
+            }
+
+            &::after {
+                content: "";
+                @include circle(57px);
+            }
+
+            &::before {
+                content: "";
+                @include circle(67px);
+            }
+        }
+    }
+
+    .footer {
+        padding-top: 20px;
+
+        &>h1 {
+            margin: 0;
+            padding: 0;
+        }
+    }
 }

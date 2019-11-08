@@ -1,8 +1,11 @@
 import React from 'react'
 
+
 if (process.env.WEBPACK) { require('./_style.scss') }
 
+
 const Footer = props => {
+
     return (
         <div className="footer">
             <div className="info">

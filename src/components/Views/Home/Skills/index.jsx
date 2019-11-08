@@ -1,9 +1,34 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Bar from './Bar'
-const Skills = props =>{
-    return(
+import visibility from '../../../Utils/visibility'
+
+const handlerVisible = () => {
+    if (typeof window !== 'undefined') {
+        const list = [...document.querySelectorAll('.line')]
+        list.map((element) => {
+            element.classList.add('progress')
+        })
+    }
+}
+
+const handlerHidden = () => {
+    if (typeof window !== 'undefined') {
+        const list = [...document.querySelectorAll('.line')]
+        list.map((element) => {
+            element.classList.remove('progress')
+        })
+    }
+}
+
+const Skills = props => {
+
+    useEffect(() => {
+        visibility({ visible: handlerVisible, hidden: handlerHidden }, '.skills')
+    }, [])
+
+    return (
         <div className="skills">
-        <h1>Skills</h1>
+            <h1>Skills</h1>
             <Bar percentage="97%" name="JavaScript" />
             <Bar percentage="96%" name="NodeJS" />
             <Bar percentage="95%" name="ReactJS" />

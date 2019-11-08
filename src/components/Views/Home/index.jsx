@@ -7,7 +7,6 @@ import Footer from './Footer'
 
 if (process.env.WEBPACK) { require('./_style.scss') }
 
-
 const Home = () => {
     return (
         <div className="content">

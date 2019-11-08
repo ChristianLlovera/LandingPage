@@ -8,7 +8,7 @@ const Bar = props => {
         <div className="bar">
             <div className="name">{name}</div>
             <div className="percentage">{percentage}</div>
-            <div className="line progress" style={style}></div>
+            <div className="line " style={style}></div>
         </div>
     )
 }

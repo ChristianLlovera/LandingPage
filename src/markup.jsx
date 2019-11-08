@@ -14,7 +14,8 @@ const Html = props => {
             <meta name="apple-mobile-web-app-capable" content="yes" />
             <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
             <link rel="stylesheet" href="assets/css/bundle.css" />
-            <link rel="shortcut icon" href="assets/img/favicon.ico" />
+            <link href="assets/img/icon.png" rel="icon" sizes="192x192" />
+            <link href="assets/img/icon.png" rel="icon" sizes="96x96" />
         </head>
             <body>
                 <main id="app" className="scroll">
