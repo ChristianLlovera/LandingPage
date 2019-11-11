@@ -22,13 +22,15 @@ const handlerHidden = () => {
 
 const Skills = props => {
 
+    const { translate } = props
+
     useEffect(() => {
         visibility({ visible: handlerVisible, hidden: handlerHidden }, '.skills')
     }, [])
 
     return (
         <div className="skills">
-            <h1>Skills</h1>
+            <h1>{translate.skilss}</h1>
             <Bar percentage="97%" name="JavaScript" />
             <Bar percentage="96%" name="NodeJS" />
             <Bar percentage="95%" name="ReactJS" />
@@ -38,7 +40,7 @@ const Skills = props => {
             <Bar percentage="90%" name="Photoshop" />
             <Bar percentage="85%" name="Illustrator" />
             <div className="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sapiente, aliquid inventore quia officiis hic explicabo! Culpa, repellat! Rem reprehenderit obcaecati voluptas dolorem laudantium? Vero deleniti tempora aperiam in obcaecati!
+                {translate.skilssInfo}
             </div>
         </div>
     )

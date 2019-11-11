@@ -1,19 +1,16 @@
 import React from 'react'
+import nl2br from 'react-nl2br'
 
 if (process.env.WEBPACK) { require('./_style.scss') }
 
 const Info = props => {
+    const { translate } = props
     return (
         <div className="info">
             <div className="logo"></div>
             <div className="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto repudiandae velit at impedit iste aliquam quibusdam delectus autem temporibus. Fugit neque laboriosam aspernatur beatae amet inventore exercitationem ut deleniti optio.
-                            <br /><br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto repudiandae velit at impedit iste aliquam quibusdam delectus autem temporibus. Fugit neque laboriosam aspernatur beatae amet inventore exercitationem ut deleniti optio.
-                            <br /><br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto repudiandae velit at impedit iste aliquam quibusdam delectus autem temporibus. Fugit neque laboriosam aspernatur beatae amet inventore exercitationem ut deleniti optio.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto repudiandae velit at impedit iste aliquam quibusdam delectus autem temporibus. Fugit neque laboriosam aspernatur beatae amet inventore exercitationem ut deleniti optio.
-                        </div>
+                {nl2br(translate.description)}
+            </div>
         </div>
     )
 }

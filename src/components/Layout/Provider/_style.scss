@@ -4,8 +4,11 @@
 * {
     position: relative;
     -webkit-user-drag: none;
+    -webkit-appearance: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
     -webkit-user-select: none;
-    -moz-user-select: none;
+    -moz-user-select: -moz-none;
     -ms-user-select: none;
     user-select: none;
     outline: none;

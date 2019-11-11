@@ -2,6 +2,8 @@ $blue : #0088f8;
 $black :#1e1902;
 $white :#ffffff;
 $white-transparent :#ffffffa1;
+$black-transparent:#1e1902de;
+$gray:rgba(128, 128, 128, 0.486);
 
 @mixin circle($radio) {
     width: $radio;

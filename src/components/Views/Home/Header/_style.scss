@@ -27,6 +27,7 @@
             background-size: cover;
             background-position: top center;
             background-repeat: no-repeat;
+            z-index: 0;
 
             &::after {
                 content: "";
@@ -43,6 +44,53 @@
             }
         }
 
+
+        &>.button {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            z-index: 1;
+
+            &>.label {
+                padding: 10px;
+                border: 3px solid $white;
+                color: $white;
+                background-color: $black-transparent;
+                border-radius: 5px;
+                cursor: pointer;
+                text-transform: uppercase;
+            }
+
+            &>.options {
+                margin-top: 5px;
+                overflow: hidden;
+                background-color: $white;
+                border-radius: 5px;
+
+                &>.item {
+                    display: block;
+                    transition: 0.5s;
+                    cursor: pointer;
+                    font-size: 12px;
+                    padding: 10px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    color: $gray;
+                    border-top: 1px solid $gray;
+
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+
+                .active {
+                    color: $blue
+                }
+            }
+        }
 
     }
 }
