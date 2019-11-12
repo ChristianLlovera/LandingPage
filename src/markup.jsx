@@ -16,6 +16,9 @@ const Html = props => {
             <link rel="stylesheet" href="assets/css/bundle.css" />
             <link href="assets/img/icon.png" rel="icon" sizes="192x192" />
             <link href="assets/img/icon.png" rel="icon" sizes="96x96" />
+            <script src="assets/js/createjs.min.js"></script>
+            <script src="assets/js/SwishSwish.js?1573538769040"></script>
+            <script src="assets/js/animate.js"></script>
         </head>
             <body>
                 <main id="app" className="scroll">

@@ -7,6 +7,7 @@ const Info = props => {
     const { translate } = props
     return (
         <div className="info">
+            <div id="swish" className="swish"></div>
             <div className="logo"></div>
             <div className="description">
                 {nl2br(translate.description)}

@@ -12,3 +12,9 @@ const Main = () => {
 
 ReactDOM.render(<Main />, document.getElementById('app'))
 
+var swish = {
+    elem: 'swish',
+    compId: '92F5F27521415B4693B90C6F0127071C'
+}
+canvasAnimate(swish)
+

@@ -12,6 +12,15 @@
     border: 6px solid $black;
     border-radius: 15px;
 
+    &>.swish {
+        position: absolute;
+        right: -140px;
+        bottom: -120px;
+        width: 220px;
+        height: 380px;
+
+    }
+
     &>.logo {
         position: absolute;
         left: 20px;
