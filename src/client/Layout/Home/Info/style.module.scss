@@ -1,0 +1,46 @@
+@import "../../../scss/variables.scss";
+
+.info {
+    margin-bottom: 20px;
+    width: -webkit-fill-available;
+    min-width: 200px;
+    max-width: 450px;
+    height: min-content;
+    padding: 20px;
+    padding-top: 40px;
+    border: 6px solid $black;
+    border-radius: 15px;
+
+    &>.swish {
+        position: absolute;
+        right: -160px;
+        bottom: -70px;
+        width: 250px;
+        height: 352px;
+    }
+
+    &>.swish {
+        // background-image: url('/assets/img/SwishSwish.png');
+        background-size: 2800%;
+        background-position: 2800% 0%;
+        animation: 'swishAnimate'1s steps(28, end) infinite;
+    }
+
+
+    &>.logo {
+        position: absolute;
+        left: 20px;
+        top: -39px;
+        width: 220px;
+        height: 70px;
+        background-image: url('/assets/img/logo.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: $white;
+    }
+
+    &>.description {
+        text-align: justify;
+        padding-bottom: 10px;
+    }
+}

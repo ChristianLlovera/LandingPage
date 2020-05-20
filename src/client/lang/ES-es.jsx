@@ -1,0 +1,12 @@
+const Es = {
+    language: "Lenguaje",
+    "ES-es": "Español",
+    "EN-en": "Ingles",
+    skilss: "habilidades",
+    skilssInfo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sapiente, aliquid inventore quia officiis hic explicabo! Culpa, repellat! Rem reprehenderit obcaecati voluptas dolorem laudantium? Vero deleniti tempora aperiam in obcaecati!",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sapiente, aliquid inventore quia officiis hic explicabo! Culpa, repellat! Rem reprehenderit obcaecati voluptas dolorem laudantium? Vero deleniti tempora aperiam in obcaecati!\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sapiente, aliquid inventore quia officiis hic explicabo! Culpa, repellat! Rem reprehenderit obcaecati voluptas dolorem laudantium? Vero deleniti tempora aperiam in obcaecati!\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sapiente, aliquid inventore quia officiis hic explicabo! Culpa, repellat! Rem reprehenderit obcaecati voluptas dolorem laudantium? Vero deleniti tempora aperiam in obcaecati!\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sapiente, aliquid inventore quia officiis hic explicabo! Culpa, repellat! Rem reprehenderit obcaecati voluptas dolorem laudantium? Vero deleniti tempora aperiam in obcaecati!\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sapiente, aliquid inventore quia officiis hic explicabo! Culpa, repellat! Rem reprehenderit obcaecati voluptas dolorem laudantium? Vero deleniti tempora aperiam in obcaecati!\n\n",
+    constantLearning: "aprendisaje constante",
+    constantLearningInfo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sapiente, aliquid inventore quia officiis hic explicabo! Culpa, repellat! Rem reprehenderit obcaecati voluptas dolorem laudantium? Vero deleniti tempora aperiam in obcaecati!"
+}
+
+export default Es

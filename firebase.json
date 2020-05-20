@@ -1,20 +1,32 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "src/client/public",
     "rewrites": [{
-      "source": "**",
+      "source": "**/**",
       "function": "server"
     }],
     "ignore": [
+      ".vscode/**",
+      ".firebase/**",
+      ".firebaserc",
       "firebase.json",
-      "**/.*",
+      "node_modules/**",
       "**/node_modules/**",
-      ".vscode",
-      "server",
-      "src"
+      "**/public/**",
+      "*.log"
     ]
   },
   "functions": {
-    "source": "server"
+    "source": ".",
+    "ignore": [
+      ".vscode/**",
+      ".firebase/**",
+      ".firebaserc",
+      "firebase.json",
+      "node_modules/**",
+      "**/node_modules/**",
+      "**/public/**",
+      "*.log"
+    ]
   }
 }

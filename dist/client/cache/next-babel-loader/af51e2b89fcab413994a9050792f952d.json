@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from \"react\";\nvar __jsx = React.createElement;\nimport Error404 from '../Layout/Error404';\n\nvar NoFount = function NoFount() {\n  return __jsx(React.Fragment, null, __jsx(Error404, null));\n};\n\nexport default NoFount;","map":null,"metadata":{},"sourceType":"module"}

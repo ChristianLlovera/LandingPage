@@ -1,0 +1,124 @@
+@import "../../scss/variables.scss";
+@import "../../scss/mixins.scss";
+
+.content {
+    height: 100%;
+
+    &>.body {
+        min-height: calc(100% - 600px);
+        display: flex;
+        background-color: $white;
+
+        &>.blue {
+            padding-top: 140px;
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+            background-color: $blue;
+            padding-left: 20px;
+            padding-right: 70px;
+            z-index: 1;
+        }
+
+        &>.white {
+            padding-top: 140px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            width: 50%;
+            background-color: $white;
+            padding-left: 70px;
+            padding-right: 20px;
+
+            .email {
+                max-width: 450px;
+                height: min-content;
+                margin-bottom: 40px;
+                color: $blue;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: -30px;
+                    top: -4px;
+                    width: 27px;
+                    height: 24px;
+                    background-color: $blue;
+                    mask: url('/assets/img/mail.svg') center / contain no-repeat;
+                    -webkit-mask: url('/assets/img/mail.svg') center / contain no-repeat;
+                }
+            }
+        }
+
+    }
+
+}
+
+
+@media screen and (max-width:640px) {
+    .content {
+        &>.header {
+            height: 150px;
+
+            &>.picture {
+                width: 150px;
+                height: 150px;
+                bottom: -76px;
+
+                &::after {
+                    @include circle(200px);
+                }
+
+                &::before {
+                    @include circle(250px);
+                }
+            }
+        }
+
+        &>.body {
+            flex-direction: column-reverse;
+
+
+            &>.blue {
+                width: 100%;
+                padding: 20px;
+                padding-top: 100px;
+            }
+
+            &>.white {
+                width: 100%;
+                padding: 20px;
+                padding-top: 170px;
+                padding-bottom: 50px;
+            }
+        }
+
+
+    }
+
+}
+
+@media screen and (max-width:1024px) and (min-width:640px) {
+    .content {
+
+        &>.body {
+            flex-direction: column-reverse;
+
+            &>.blue {
+                width: 100%;
+                padding: 20px;
+                padding-top: 120px;
+            }
+
+            &>.white {
+                width: 100%;
+                padding: 20px;
+                padding-top: 220px;
+                padding-bottom: 50px;
+            }
+        }
+
+    }
+
+}

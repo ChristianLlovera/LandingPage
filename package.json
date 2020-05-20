@@ -1,0 +1,44 @@
+{
+  "name": "christianllovera",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "dist/server/index.js",
+  "engines": {
+    "node": "10"
+  },
+  "scripts": {
+    "test": "jest",
+    "dev:client": "next src/client",
+    "dev:server": "babel src/server --out-dir dist/server --source-maps --watch",
+    "dev": "npm run dev:client && npm run dev:server",
+    "build:client": "next build src/client",
+    "build:server": "babel src/server --out-dir dist/server --source-maps",
+    "build": "npm run build:client && npm run build:server",
+    "preserve": "npm run build",
+    "serve": "cross-env NODE_ENV=production firebase serve --only functions,hosting",
+    "predeploy": "rimraf dist/ && npm run build",
+    "deploy": "cross-env NODE_ENV=production firebase deploy --only functions,hosting"
+  },
+  "repository": {
+    "type": "git",
+    "url": "C:/Users/christian/Dropbox/www/christianLlovera.git"
+  },
+  "author": "christian",
+  "license": "ISC",
+  "dependencies": {
+    "firebase-admin": "^8.12.1",
+    "firebase-functions": "^3.6.1",
+    "next": "^9.3.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "sass": "^1.26.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "cross-env": "^7.0.2",
+    "react-nl2br": "^0.6.0",
+    "rimraf": "^3.0.2"
+  }
+}
