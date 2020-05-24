@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import Router from 'next/router'
+import Loading from '../Layout/Loading'
 
 const HomePage = props => {
 
@@ -7,7 +8,7 @@ const HomePage = props => {
         const { pathname } = Router
         if (pathname == '/') { Router.push('/ES-es') }
     }, [])
-    return (<>...loading</>)
+    return (<Loading />)
 }
 
 
