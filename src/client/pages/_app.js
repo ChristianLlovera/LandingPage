@@ -6,6 +6,7 @@ export default function MyApp({ Component, pageProps }) {
         <>
             <Head>
                 <link rel="shortcut icon" href="/assets/img/icon.png" />
+                <title>Christian Llovera</title>
             </Head>
 
             <main className="scroll">

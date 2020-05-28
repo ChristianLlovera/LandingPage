@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import useHandleClick from '../../../Hooks/useHandleClick'
+import useHandleClick from '../../../hooks/useHandleClick'
 import style from './style.module.scss'
 
 const Options = props => {

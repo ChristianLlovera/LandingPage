@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import Router from 'next/router'
-import Loading from '../Layout/Loading'
+import Loading from '../components/Loading'
+import Head from 'next/head'
 
 const HomePage = props => {
 
@@ -8,6 +9,7 @@ const HomePage = props => {
         const { pathname } = Router
         if (pathname == '/') { Router.push('/ES-es') }
     }, [])
+
     return (<Loading />)
 }
 
