@@ -35,6 +35,7 @@ const Skills = props => {
             <Bar percentage="97%" name="JavaScript" />
             <Bar percentage="80%" name="NodeJS" />
             <Bar percentage="95%" name="ReactJS" />
+            <Bar percentage="89%" name="Jest" />
             <Bar percentage="32%" name="Redux" />
             <Bar percentage="97%" name="NextJS" />
             <Bar percentage="77%" name="Express" />

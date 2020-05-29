@@ -1,3 +1,4 @@
+**/config/firebase.jsx
 node_modules/
 dist/
 .next/

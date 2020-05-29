@@ -1,5 +1,7 @@
+
 {
   "hosting": {
+    "site": "christianllovera-8864d",
     "public": "src/client/public",
     "rewrites": [{
       "source": "**/**",
