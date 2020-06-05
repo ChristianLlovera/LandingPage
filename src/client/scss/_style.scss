@@ -126,6 +126,28 @@ body {
     }
 }
 
+
+[icon="ig"] {
+    mask: url('/assets/img/ig.svg') center / contain no-repeat;
+    -webkit-mask: url('/assets/img/ig.svg') center / contain no-repeat;
+}
+
+[icon="fb"] {
+    mask: url('/assets/img/fb.svg') center / contain no-repeat;
+    -webkit-mask: url('/assets/img/fb.svg') center / contain no-repeat;
+}
+
+[icon="be"] {
+    mask: url('/assets/img/be.svg') center / contain no-repeat;
+    -webkit-mask: url('/assets/img/be.svg') center / contain no-repeat;
+}
+
+[icon="git"] {
+    mask: url('/assets/img/git.svg') center / contain no-repeat;
+    -webkit-mask: url('/assets/img/git.svg') center / contain no-repeat;
+}
+
+
 .progress {
     animation: progressBar 3s ease-in-out;
     animation-fill-mode: both;

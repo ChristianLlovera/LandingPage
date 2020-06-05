@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import Header from './Header'
 import Skills from './Skills'
 import Social from './Social'
+import Card from './Card'
 import Info from './Info'
 import Footer from './Footer'
 import En from '../../lang/EN-en'
@@ -45,6 +46,25 @@ const Home = props => {
                     <a className={style.email} href="mailto:christian.llovera@gmail.com">
                         christian.llovera@gmail.com
                     </a>
+                    <Card
+                        backgroundColor="black"
+                        color="white"
+                        icon="git"
+                        title="GitHub"
+                        titleButton="ir a GitHub"
+                        url="https://www.behance.net/christillovera"
+                        info={translate.gitHubDescription}
+                    />
+                    <Card
+                        backgroundColor="#340854"
+                        color="white"
+                        icon="be"
+                        title="Bēhance"
+                        titleButton="ir a Bēhance"
+                        url="https://www.behance.net/christillovera"
+                        info={translate.behanceDescription}
+                    />
+
                 </div>
             </div>
             <Footer translate={translate} />
