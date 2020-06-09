@@ -52,7 +52,7 @@ const Home = props => {
                         icon="git"
                         title="GitHub"
                         titleButton="ir a GitHub"
-                        url="https://www.behance.net/christillovera"
+                        url="https://github.com/ChristianLlovera"
                         info={translate.gitHubDescription}
                     />
                     <Card

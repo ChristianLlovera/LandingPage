@@ -3,16 +3,16 @@ import { useEffect } from 'react'
 import '../scss/_style.scss'
 import Head from 'next/head'
 
-const runScriptFirebase = ()=>{
-    if (typeof firebase === 'undefined'){
-        console.error('firebase undefied')
-    }else{
-        const defaultAnalytics = firebase.analytics()
+const runScriptAnalytics = () => {
+    if (typeof firebase.analytics == 'function'
+        && process.env.NODE_ENV !== 'development') {
+        firebase.analytics()
     }
 }
 
 export default function MyApp({ Component, pageProps }) {
-    useEffect(()=>runScriptFirebase(),[])
+
+    useEffect(() => runScriptAnalytics(), [])
 
     return (
         <>
