@@ -31,20 +31,12 @@ $ npm run dev
 Si deseas hacer un deploy en tu cuenta de firebase recuerda cambiar los datos del archivo .firebaserc
 
 Luego para hacer pruebas en local ejecuta el comando
- 
-```bash
-$ npm run preserve
-```
 
 ```bash
 $ npm run serve
 ```
 
 Y para hacer deploy
-
-```bash
-$ npm run predeploy
-```
 
 ```bash
 $ npm run deploy
