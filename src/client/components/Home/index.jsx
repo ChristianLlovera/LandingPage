@@ -67,6 +67,7 @@ const Home = props => {
 
                 </div>
             </div>
+            <a class="whatsapp-btn animated bounceInLeft" icon="ws" target="_blank" href="https://wa.me/584242083778"></a>
             <Footer translate={translate} />
         </div>
     )

@@ -3,7 +3,7 @@ import nl2br from 'react-nl2br'
 import style from './style.module.scss'
 
 const onLoadImage = () => {
-    const url = '/assets/img/SwishSwish.png'
+    const url = '/assets/img/SwishSwish.webp'
     const elem = document.getElementById('swish')
     const bgImg = new Image()
     bgImg.onload = () => {
