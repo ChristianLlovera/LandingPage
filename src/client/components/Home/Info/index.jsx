@@ -16,12 +16,12 @@ const Info = props => {
     const { translate } = props
 
     useEffect(() => {
-        onLoadImage()
+        // onLoadImage()
     }, [])
 
     return (
         <div className={style.info}>
-            <div id="swish" className={style.swish}></div>
+            {/* <div id="swish" className={style.swish}></div> */}
             <div className={style.logo}></div>
             <div className={style.description}>
                 {nl2br(translate.description)}
