@@ -28,15 +28,17 @@
 
 
     &>.logo {
+        visibility: hidden;
         position: absolute;
-        left: 20px;
-        top: -39px;
+        left: -4px;
+        top: -124px;
         width: 220px;
-        height: 70px;
-        background-image: url('/assets/img/logo.svg');
+        height: 158px;
+        // background-image: url('/assets/img/avatar-web.webp');
         background-repeat: no-repeat;
         background-position: center;
-        background-color: $white;
+        background-size: contain;
+        background-color: transparent;
     }
 
     &>.description {

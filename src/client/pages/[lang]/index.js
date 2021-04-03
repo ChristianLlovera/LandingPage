@@ -38,22 +38,22 @@ const HomePage = props => {
     }, [lang])
 
     useEffect(() => {
-        scriptTagFB()
+        // scriptTagFB()
     }, [])
 
     return (
         <>
             <Home {...props} />
             {/* <!-- Load Facebook SDK for JavaScript --> */}
-            <div id="fb-root"></div>
+            {/* <div id="fb-root"></div> */}
             {/* <!-- Your Chat Plugin code --> */}
-            <div className="fb-customerchat"
+            {/* <div className="fb-customerchat"
                 attribution="setup_tool"
                 page_id="606422813026372"
                 theme_color="#0084ff"
                 logged_in_greeting="Hola, si necesitas saber algo sobre mi trabajo, solo deja un mensaje."
                 logged_out_greeting="Hola, si necesitas saber algo sobre mi trabajo, solo deja un mensaje.">
-            </div>
+            </div> */}
         </>
     )
 }
