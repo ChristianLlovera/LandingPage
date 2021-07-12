@@ -47,27 +47,27 @@ const Home = props => {
                         christian.llovera@gmail.com
                     </a>
                     <Card
-                        backgroundColor="black"
+                        backgroundColor="#0f1231"
                         color="white"
-                        icon="git"
-                        title="GitHub"
-                        titleButton="ir a GitHub"
-                        url="https://github.com/ChristianLlovera"
-                        info={translate.gitHubDescription}
+                        icon="cf"
+                        title="CopaFuturo"
+                        titleButton="Ver Web"
+                        url="https://copafuturo.com/"
+                        info={translate.copafuturo}
                     />
                     <Card
-                        backgroundColor="#340854"
+                        backgroundColor="#041e42"
                         color="white"
-                        icon="be"
-                        title="Bēhance"
-                        titleButton="ir a Bēhance"
-                        url="https://www.behance.net/christillovera"
-                        info={translate.behanceDescription}
+                        icon="tg"
+                        title="The Game PTY"
+                        titleButton="Ver Web"
+                        url="https://thegamepty.com/"
+                        info={translate.thegame}
                     />
 
                 </div>
             </div>
-            <a class="whatsapp-btn animated bounceInLeft" icon="ws" target="_blank" href="https://wa.me/584242083778"></a>
+            <a className="whatsapp-btn animated bounceInLeft" icon="ws" target="_blank" href="https://wa.me/584242083778"></a>
             <Footer translate={translate} />
         </div>
     )

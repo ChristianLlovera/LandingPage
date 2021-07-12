@@ -146,10 +146,22 @@ body {
     -webkit-mask: url('/assets/img/git.svg') center / contain no-repeat;
 }
 
+[icon="cf"] {
+    mask: url('/assets/img/cf.svg') center / contain no-repeat;
+    -webkit-mask: url('/assets/img/cf.svg') center / contain no-repeat;
+}
+
+[icon="tg"] {
+    mask: url('/assets/img/tg.svg') center / contain no-repeat;
+    -webkit-mask: url('/assets/img/tg.svg') center / contain no-repeat;
+}
+
 [icon="ws"]:before {
     mask: url('/assets/img/ws.svg') center / contain no-repeat;
     -webkit-mask: url('/assets/img/ws.svg') center / contain no-repeat;
 }
+
+
 
 .whatsapp-btn {
     position: fixed;
