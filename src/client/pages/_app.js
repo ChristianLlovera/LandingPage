@@ -18,13 +18,19 @@ export default function MyApp({ Component, pageProps }) {
         <>
             <Head>
                 <link rel="shortcut icon" href="/assets/img/icon.png" />
-                <title>Christian Llovera</title>
+                <meta name="thumbnail" content="https://christianllovera.com/assets/img/thumbnail.jpg" />
+                <meta property="og:title" content="Christian Llovera - Diseñador Gráfico / Desarrollador Web" />
+                <meta property="og:description" content="Soy Christian Llovera👋, tengo más de 12 años en el mundo del desarrollo web, diseño gráfico, Ilustración digital y marketing digital, cuento con conocimiento en distintas tecnologías de desarrollo tanto de back-end como de front-end, entre ellas, React.js, node.js, PHP, JavaScript vanilla, WordPress, Illustrator, Photoshop…" />
+                <meta property="og:image" content="https://christianllovera.com/assets/img/ogmin.png" />
+                <meta property="og:type" content="website" />
+                <title>Christian Llovera - Diseñador Gráfico / Desarrollador Web</title>
             </Head>
 
             <main className="scroll">
                 <Component {...pageProps} />
             </main>
-
         </>
     )
 }
+
+
